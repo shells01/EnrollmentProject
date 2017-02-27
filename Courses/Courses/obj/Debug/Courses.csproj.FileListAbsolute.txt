@@ -1,0 +1,10 @@
+c:\users\student\documents\visual studio 2013\Projects\Courses\Courses\bin\Courses.dll.config
+c:\users\student\documents\visual studio 2013\Projects\Courses\Courses\bin\Courses.dll
+c:\users\student\documents\visual studio 2013\Projects\Courses\Courses\bin\Courses.pdb
+c:\users\student\documents\visual studio 2013\Projects\Courses\Courses\bin\EntityFramework.dll
+c:\users\student\documents\visual studio 2013\Projects\Courses\Courses\bin\EntityFramework.SqlServer.dll
+c:\users\student\documents\visual studio 2013\Projects\Courses\Courses\bin\EntityFramework.xml
+c:\users\student\documents\visual studio 2013\Projects\Courses\Courses\bin\EntityFramework.SqlServer.xml
+c:\users\student\documents\visual studio 2013\Projects\Courses\Courses\obj\Debug\Courses.csprojResolveAssemblyReference.cache
+c:\users\student\documents\visual studio 2013\Projects\Courses\Courses\obj\Debug\Courses.dll
+c:\users\student\documents\visual studio 2013\Projects\Courses\Courses\obj\Debug\Courses.pdb
