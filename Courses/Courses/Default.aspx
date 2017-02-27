@@ -39,16 +39,7 @@
         <asp:Label ID="resultLabel" runat="server"></asp:Label>
         <br />
         <br />
-        <asp:ObjectDataSource ID="CourseObjectDataSource" runat="server" SelectMethod="GetCourses" TypeName="Courses.CourseRepository"></asp:ObjectDataSource>
         <br />
-        <asp:GridView ID="CourseGridView" runat="server" AutoGenerateColumns="False" BorderStyle="Double" DataSourceID="CourseObjectDataSource" OnSelectedIndexChanged="CourseGridView_SelectedIndexChanged">
-            <Columns>
-                <asp:BoundField DataField="CourseId" HeaderText="CourseId" SortExpression="CourseId" />
-                <asp:BoundField DataField="CourseName" HeaderText="CourseName" SortExpression="CourseName" />
-                <asp:BoundField DataField="Instructor" HeaderText="Instructor" SortExpression="Instructor" />
-                <asp:BoundField DataField="Department" HeaderText="Department" SortExpression="Department" />
-            </Columns>
-        </asp:GridView>
     
     </div>
     </form>

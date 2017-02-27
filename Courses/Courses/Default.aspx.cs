@@ -50,10 +50,12 @@ namespace Courses
 
             Insert(courseName, instructor, department);
 
-
-            resultLabel.Text = String.Format("The new course {0} was successfully added to the {1} department.", courseName, department);
+            resultLabel.Text += String.Format("The new course {0} was successfully added to the {1} department.", courseName, department);
+            
 
         }
+
+        
         
 
     }
