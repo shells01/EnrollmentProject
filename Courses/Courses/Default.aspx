@@ -12,36 +12,34 @@
         .newStyle2 {
             font-family: Arial, Helvetica, sans-serif;
         }
+        .newStyle3 {
+            font-size: x-large;
+        }
+        .newStyle4 {
+            font-size: large;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-    
-        <h3><span class="newStyle2">Add Course Form</span></h3>
+        <span class="newStyle4">
+    <a href="Views/AddCourse.aspx">Create New Course</a></span> <span class="newStyle4">
+    <br />
+    <a href="Views/EditStudent.aspx">Enroll in Courses</a></span><br />
         <br />
-        Course
-        Name:&nbsp;
-        <asp:TextBox ID="nameTextBox" runat="server"></asp:TextBox>
-        <br />
-        <br />
-        Instructor:&nbsp;
-        <asp:TextBox ID="instructorTextBox" runat="server"></asp:TextBox>
-        <br />
-        <br />
-        Department:&nbsp;
-        <asp:TextBox ID="departmentTextBox" runat="server"></asp:TextBox>
-        <br />
-        <br />
-        <asp:Button ID="submitButton" runat="server" Text="Add Course" />
-        <br />
-        <br />
-        <asp:Label ID="resultLabel" runat="server"></asp:Label>
-        <br />
-        <br />
-        <br />
-    
-    </div>
+        List of Courses:
+        <p>
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="CourseData">
+                <Columns>
+                <%--    <asp:BoundField DataField="CourseId" HeaderText="CourseId" SortExpression="CourseId" />--%>
+                    <asp:BoundField DataField="CourseName" HeaderText="CourseName" SortExpression="CourseName" />
+                    <asp:BoundField DataField="Instructor" HeaderText="Instructor" SortExpression="Instructor" />
+                    <asp:BoundField DataField="Department" HeaderText="Department" SortExpression="Department" />
+                    <asp:HyperLinkField Text ="Edit" DataNavigateUrlFields="CourseId" DataNavigateUrlFormatString ="Views/EditCourse?CourseId={0}" />
+                </Columns>
+            </asp:GridView>
+        </p>
+        <asp:ObjectDataSource ID="CourseData" runat="server" SelectMethod="GetCourses" TypeName="Courses.Course"></asp:ObjectDataSource>
     </form>
 </body>
 </html>

@@ -11,7 +11,16 @@ namespace Courses
         public string CourseName { get; set; }
         public string Instructor { get; set; }
         public string Department { get; set; }
-        
+
         public List<Student> Students { get; set; }
+
+        public Course(){
+            Students = new List<Student>();
+        }
+
+        public static List<Course> GetCourses()
+        {
+            return new EnrollmentContext().Course.ToList();
+        }
     }
 }

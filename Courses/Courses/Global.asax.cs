@@ -12,7 +12,7 @@ namespace Courses
     {
         protected void Application_Start(object sender, EventArgs e)
         {
-            Database.SetInitializer(new EnrollmentContextSeeder());
+            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<EnrollmentContext>());
         }
     }
 }
